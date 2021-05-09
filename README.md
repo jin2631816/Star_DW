@@ -2,7 +2,6 @@
 The operation of the data warehouse can be broken down into 3 major steps:
 1) Build a DW
 2) Enrich Customer Transaction Data and Store in DW, extraction, transformation, and loading using the INLJ algorithm.
-3) To be continued
 
 ## Requirements
 The `DIM_CUSTOMERS`, `DIM_WAREHOUSE`, `DIM_PRODUCTS`, `DIM_SUPPLIERS`, `DIM_DATE` and `FACT_SALE` tables should already be loaded in the database.
