@@ -7,12 +7,12 @@ The operation of the data warehouse can be broken down into 3 major steps:
 The `DIM_CUSTOMERS`, `DIM_WAREHOUSE`, `DIM_PRODUCTS`, `DIM_SUPPLIERS`, `DIM_DATE` and `FACT_SALE` tables should already be loaded in the database.
 
 ## Part 1: Build a DW 
-CREATE THE NECESSARY TABLES FOR THE DATA WAREHOUSE ACCORDING TO THE STAR-SCHEMA. All existing tables with the same name will be dropped and replaced by empty 
+CREATE the necessary tables for the data warehouse accoring to the STAR-Schema. All existing tables with the same name will be dropped and replaced by empty 
 tables named `DIM_CUSTOMERS`, `DIM_WAREHOUSE`, `DIM_PRODUCTS`, `DIM_SUPPLIERS`, `DIM_DATE` (dimension tables); and `FACT_SALE` (fact table).
 
 Once completed, all tables aboved would have been created.
 
-## Part 2: Extraction, Transformation, & Loading Using The INLJ Algorithm
+## Part 2: ETL Using The INLJ Algorithm
 1) The algorithm involves the creation of the `c_DS` which is a cursor that will be used to read the tuples from the `DATASTREAM` table.
 2) The `BULK COLLECT...LIMIT=100` statement limits the number of tuples per batch read to **100**.
 3) It is possible to change this by replacing the number "100" by any number less than the total number of records in the `DATASTREAM` table.
